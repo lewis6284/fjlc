@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+venv/
+ENV/
+
+# IDEs & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Django stuff
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+
+# Media & static (don’t track user uploads)
+media/
+staticfiles/
+
+# If you generate static locally
+/static/
+
+# Coverage & testing
+.coverage
+coverage/
+htmlcov/
+.tox/
+pytest_cache/
+
+# Migrations (optional: keep if you want to version them)
+# */migrations/*
+# !*/migrations/__init__.py
+
+# OS files
+.DS_Store
+Thumbs.db
