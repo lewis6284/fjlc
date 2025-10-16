@@ -4,3 +4,5 @@ from .models import *
 
 admin.site.register(User)
 admin.site.register(Post)
+admin.site.register(TakenPost)
+admin.site.register(Archive)
