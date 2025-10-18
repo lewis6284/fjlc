@@ -58,6 +58,7 @@ SIMPLE_JWT = {
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     "corsheaders.middleware.CorsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -150,3 +151,5 @@ import os
 # Media files (uploads)
 MEDIA_URL = '/media/'   # URL to access media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Folder where files will be stored
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
